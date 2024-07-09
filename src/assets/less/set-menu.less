@@ -1,0 +1,350 @@
+/*-- -------------------------- -->
+<---           Pricing          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #pricing-1753 {
+        padding: var(--sectionPadding);
+        /* 100px - 250px */
+        padding-bottom: clamp(6.25rem, 13vw, 15.625rem);
+        background-color: #f7f7f7;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            /* static tiled pattern */
+            content: "";
+            height: 100%;
+            width: 100%;
+            opacity: 0.08;
+            background: url("/assets/images/pattern.png");
+            background-size: auto;
+            background-position: center;
+            background-repeat: repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-title {
+            margin: 0;
+            max-width: 23ch;
+        }
+
+        .cs-color {
+            color: var(--primary);
+        }
+
+        .cs-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: (48/16rem);
+        }
+
+        .cs-card-group {
+            text-align: center;
+            width: 100%;
+            padding: (0/16rem) clamp(1rem, 2vw, 2rem);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (24/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (24/16rem);
+        }
+
+        .cs-item-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (8/16rem);
+        }
+
+        .cs-h3 {
+            font-size: (25/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--headerColor);
+        }
+
+        .cs-h2 {
+            font-size: (32/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--primary);
+            font-family: "Josefin Sans", Arial, sans-serif;
+            text-transform: none;
+        }
+
+        .cs-package {
+            font-size: (16/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-item-text {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+            opacity: 0.8;
+        }
+
+        .cs-graphic {
+            width: 100%;
+            min-width: (1920/16rem);
+            height: auto;
+            position: absolute;
+            bottom: (-2/16rem);
+            left: (0/16rem);
+            z-index: -1;
+        }
+
+        .cs-dark {
+            display: none;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #pricing-1753 {
+        .cs-wrapper {
+            flex-direction: row;
+            align-items: flex-start;
+            /* 16px - 20px */
+            gap: clamp(1rem, 3vw, 1.25rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #pricing-1753 {
+            background-color: var(--dark);
+
+            .cs-title, .cs-h3, .cs-header, .cs-item-text, .cs-package {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: .8;
+            }
+
+            .cs-light {
+                display: none;
+            }
+
+            .cs-color {
+                color: #E4C974;
+            }
+
+            .cs-dark {
+                display: block;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---           Pricing          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #pricing-1754 {
+        padding: var(--sectionPadding);
+        /* 100px - 250px */
+        padding-bottom: clamp(6.25rem, 13vw, 15.625rem);
+        background-color: var(--medium);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+            margin: 0;
+            max-width: 23ch;
+        }
+
+        .cs-color {
+            color: #E4C974;
+        }
+
+        .cs-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: (48/16rem);
+        }
+
+        .cs-card-group {
+            text-align: center;
+            width: 100%;
+            padding: (0/16rem) clamp(1rem, 2vw, 2rem);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (24/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            /* prevents padding from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (24/16rem);
+        }
+
+        .cs-item-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: (8/16rem);
+        }
+
+        .cs-h3 {
+            font-size: (25/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-h2 {
+            font-size: (32/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--primary);
+            font-family: "Josefin Sans", Arial, sans-serif;
+            text-transform: none;
+        }
+
+        .cs-package {
+            font-size: (16/16rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-item-text {
+            font-size: (16/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
+        }
+
+        .cs-graphic {
+            width: 100%;
+            min-width: (1920/16rem);
+            height: auto;
+            position: absolute;
+            bottom: (-2/16rem);
+            left: (0/16rem);
+            z-index: -1;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #pricing-1754 {
+        .cs-wrapper {
+            flex-direction: row;
+            align-items: flex-start;
+            /* 16px - 20px */
+            gap: clamp(1rem, 3vw, 1.25rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #pricing-1754 {
+            background-color: var(--medium);
+
+            .cs-graphic {
+                opacity: 0.1;
+            }
+        }
+    }
+}
+                                
+                                

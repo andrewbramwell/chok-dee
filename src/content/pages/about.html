@@ -1,7 +1,7 @@
 ---
-title: 'About | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'About | Chokdee Thai Cuisine | Ilkley'
+description: "Discover the story behind Chokdee Thai Cuisine. From Bangkok's top kitchens to Ilkley, our owners bring authentic Thai flavors and hospitality to the Yorkshire Dales."
+preloadImg: '/assets/images/banner.webp'
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -15,62 +15,73 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/about/" class="cs-link cs-active">About Us</a>
         </div>
-    </section>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="pad krapao" loading="eager" width="2500" height="1667">
+    </picture>
+</div>
+                                
 
-    {% include 'components/cta.html' %}
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-867">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/gallery/1.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/gallery/1.webp">
+            <img loading="lazy" decoding="async" src="/assets/images/gallery/1.webp" alt="therapy" width="630" height="775">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Our Chokdee Journey</h2>
+            <p class="cs-text">
+                Chokdee means "Good Luck" in Thai, and for us - Mod and Eak - it's the realization of our lifelong dream.
+            </p>
+            <p class="cs-text">
+                As head chef, Mod's culinary passion began in her hometown of Uttaradit, Northern Thailand. Her journey led her through culinary studies and into prestigious kitchens, honing the skills you'll taste in every dish.
+            </p>
+            <p class="cs-text">
+                Eak, our restaurant manager, brings over two decades of Bangkok hospitality experience. Since 1997, he's been crafting exceptional dining experiences for guests.
+            </p>
+            <p class="cs-text">
+                Our story began at the renowned Dusit Thani Hotel in Bangkok, where we first met while working together. Our shared love for Thai cuisine then took us to the famous Blue Elephant restaurant, where we served Western celebrities and diplomats.
+            </p>
+            <p class="cs-text">
+                In 2005, Mod's culinary adventure led her to Russia, where she played a key role in Blue Elephant's international expansion.
+            </p>
+            <p class="cs-text">
+                We brought our expertise to the UK in 2008, working in several high-profile Asian Fusion and Thai restaurants across the country.
+            </p>
+            <p class="cs-text">
+                December 2022 marked a new chapter in our lives when we acquired Chokdee Thai Cuisine, finally fulfilling our dream of running our own restaurant.
+            </p>
+            <p class="cs-text">
+                At Chokdee, we blend our years of experience with our deep love for Thai cuisine. Every dish we serve reflects our journey - from the streets of Bangkok to the heart of Ilkley. We invite you to join us and experience the authentic flavors of Thailand, served with our warm smiles and a touch of "good luck".
+            </p>
+        </div>
+    </div>
+</section>
+                                
+
+
 
 {% endblock %}

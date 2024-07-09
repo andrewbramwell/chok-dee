@@ -1,12 +1,12 @@
 ---
-title: 'Contact | Code Stitch Web Designs'
-description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+title: 'Contact Us | Chokdee Thai Cuisine | Ilkley'
+description: 'Reach out to Chokdee Thai Cuisine in Ilkley. Book a table, inquire about our menu, or share your feedback. We are here to answer your questions and welcome you!'
+preloadImg: '/assets/images/banner.webp'
 permalink: 'contact/'
 eleventyNavigation:
     key: Contact Us
     order: 600
-    hideOnDesktop: true
+    
 ---
 
 {% extends "layouts/base.html" %}
@@ -17,83 +17,94 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
+<div id="banner-1106">
+    <div class="cs-container">
+        <span class="cs-int-title">Contact Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="/" class="cs-link">Home</a>
+            <a href="/contact/" class="cs-link cs-active">Contact</a>
         </div>
-    </section>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="pad krapao" loading="eager" width="2500" height="1667">
+    </picture>
+</div>
+
+
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-322">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch with Chokdee Thai Cuisine</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-322" name="Contact Form" method="post" data-netlify="true"><input type='hidden' name='form-name' value='Contact Form' />
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-322" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="text" id="email-322" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="text" id="phone-322" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-322" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Contact Us</button>
+            </form>
+        </div>
+        <div class="cs-right">
+            <!--Map Image, pin is made in the CSS-->
+            <div class="cs-map" aria-hidden="true">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9397.245858083434!2d-1.8253219!3d53.9262102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bfbd2ae077513%3A0x7e42bbc4d856efa5!2sChokdee%20Thai%20Cuisine%20in%20Ilkley!5e0!3m2!1sen!2suk!4v1718531640085!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <ul class="cs-contact-group">
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/phone-w.svg" alt="icon" width="20" height="20">
+                        Phone
+                    </span>
+                    <a href="tel:{{client.mobileForTel}}" class="cs-link">{{client.mobileFormatted}}</a>
+                    <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/pin.svg" alt="icon" width="20" height="20">
+                        Address
+                    </span>
+                    <a href="{{client.address.mapLink}}" class="cs-link">{{client.address.lineOne}}, <br>{{client.address.city}}, {{client.address.zip}}</a>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">
+                        <img class="cs-icon" decoding="async" src="/assets/svgs/clock.svg" alt="icon" width="20" height="20">
+                        Hours
+                    </span>
+                    <span class="cs-hours">Monday: Closed</span>
+                    <span class="cs-hours">Tues-Fri: 4-10pm</span>
+                    <span class="cs-hours">Sat: 12-3pm, 5-10pm</span>
+                    <span class="cs-hours">Sun: 12-3pm, 5-9pm</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+                                
+
 {% endblock %}

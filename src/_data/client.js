@@ -1,15 +1,13 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "name": "Chokdee Thai Cuisine",
+    "email": "chokdeethaicuisine2022@hotmail.com",
+    "phoneForTel": "+447472845319",
+    "phoneFormatted": "07472 845319",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "lineOne": "31 Church St",
+        "city": "Ilkley",
+        "zip": "LS29 9DR",
+        "mapLink": "https://maps.app.goo.gl/7yBfn2Rk2KQS8AbT9"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
