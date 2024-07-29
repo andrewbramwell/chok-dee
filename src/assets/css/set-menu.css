@@ -207,6 +207,9 @@
   #pricing-1754 .cs-color {
     color: #E4C974;
   }
+  #pricing-1754 .cs-charge {
+    color: #f7f7f7;
+  }
   #pricing-1754 .cs-wrapper {
     width: 100%;
     display: flex;
